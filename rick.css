@@ -1,0 +1,254 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
+  background-color: #0b132b; /* Fondo oscuro tipo espacio */
+  color: #c5c6c7; /* Texto gris claro */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f2833; /* Fondo gris oscuro */
+  color: #66fcf1; /* Verde neón de la serie */
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 5px solid #45a29e; /* Verde agua */
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Gloria Hallelujah', cursive; /* Letra más juguetona */
+  margin: 0;
+  text-shadow: 2px 2px #45a29e; /* Efecto neón */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0b132b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  background-color: #66fcf1; /* Verde brillante */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+nav ul li a:hover {
+  background-color: #45a29e; /* Verde agua */
+  transform: scale(1.1) rotate(3deg); /* Animación divertida */
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #1f2833;
+  color: #c5c6c7;
+  padding: 0.5rem;
+  border-radius: 8px;
+  top: calc(100% + 5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 200px;
+}
+
+nav ul li ul li a {
+  background-color: transparent;
+  color: #66fcf1;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li ul li a:hover {
+  background-color: #45a29e;
+  color: #0b132b;
+}
+
+/* Botones */
+button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #45a29e;
+  color: #1f2833;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #66fcf1;
+  transform: scale(1.1) rotate(-3deg);
+}
+
+/* Grid para personajes */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+  background: radial-gradient(circle, #66fcf1 20%, #45a29e 50%, #0b132b 90%);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.7), 0 0 40px rgba(69, 162, 158, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: portal-glow 3s infinite ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(102, 252, 241, 1), 0 0 80px rgba(69, 162, 158, 0.7);
+}
+
+/* Animación para el fondo de la tarjeta */
+@keyframes portal-glow {
+  0% {
+    background: radial-gradient(circle, #66fcf1 25%, #45a29e 60%, #0b132b 90%);
+  }
+  50% {
+    background: radial-gradient(circle, #45a29e 25%, #66fcf1 60%, #0b132b 90%);
+  }
+  100% {
+    background: radial-gradient(circle, #66fcf1 25%, #45a29e 60%, #0b132b 90%);
+  }
+}
+
+/* Imagen de la tarjeta */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #45a29e;
+}
+
+/* Título de la tarjeta */
+.card h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-shadow: 0 0 10px rgba(102, 252, 241, 0.7);
+  font-family: 'Press Start 2P', cursive; /* Fuente estilo retro */
+}
+
+
+/* Estilos generales del modal */
+#modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  z-index: 1000;
+  visibility: hidden; /* Oculto por defecto */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+#modal.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#modal:not(.hidden) {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Portal animado */
+.portal-effect {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #66fcf1 20%, #45a29e 60%, transparent 100%);
+  animation: portal-animation 1s ease-out forwards;
+  z-index: 1; /* Debajo del contenido */
+  box-shadow: 0 0 50px 10px #66fcf1;
+  transform: scale(0); /* Empieza pequeño */
+  opacity: 0;
+}
+
+@keyframes portal-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Contenido del modal */
+.modal-content {
+  position: relative;
+  background-color: #0b132b;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  z-index: 2; /* Encima del portal */
+  animation: modal-appear 0.5s ease-out forwards;
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+@keyframes modal-appear {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Botón para cerrar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 2;
+}

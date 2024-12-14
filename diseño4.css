@@ -1,0 +1,105 @@
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#nav > ul > li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+#nav > ul > li > a {
+    color: #221E22;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+#nav > ul > li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1f20;
+    width: 150px;
+    box-shadow: 0px 2px 2px rgba(211, 210, 210, 0.2);
+}
+#nav > ul > li:hover ul {
+    display: block;
+}
+#nav > ul > li ul li {
+    border-bottom: 1px solid #ddd;
+}
+#nav > ul > li ul li a {
+    color: #76D609;
+    padding: 8px;
+    display: block;
+    font-size: 16px;
+    text-align: left;
+}
+#nav > ul > li ul li:hover {
+    background-color: #f0f0f0;
+}
+
+#h1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EE5622;
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    
+    color: #221E22;
+    text-align: center;
+}
+h2{
+    font-family: Open Sans;
+}
+
+ul li ul li::marker{
+    content: "🙊";
+}
+ul li ul li ul li::marker{
+    content: "🙈";
+}
+a:hover {
+    color: #F20505;
+    rotate: 10deg;
+}
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    background-color: #9297C4;
+  }
+ header{
+    background-color: #F2E86D;
+    color: #A38560;
+    padding: 1em;
+    border-bottom: 5px solid #574D68;
+  }
+  header p{
+    color: #221E22;
+    font-size: 1rem;
+  }
+  a{
+    color:#243119;
+  }

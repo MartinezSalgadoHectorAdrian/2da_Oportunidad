@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI</title>
+    
+    <script src="pokeapi.js" defer></script>
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.violet.min.css">
+    <link rel="stylesheet" href="diseño5.css">
+    <style>
+        body{
+            font-weight: bolder ;
+        }
+    </style>
+     
+</head>
+<header class="Top">
+    <div class="top-div">
+        <h2>
+            Practicas Segunda Oportunidad
+        </h2>
+    
+    </div>
+    </header>
+    <header class="menu">
+    <nav id="nav"> 
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li>
+                <a href="#">AVANCE 1</a>
+                <ul>
+                    <li><a href="TextoGenerico.html">Texto</a></li>
+                    <li><a href="TextoTecnico.html">Texto Técnico</a></li>
+                    <li><a href="Listas.html">Listas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">AVANCE 2</a>
+                <ul>
+                    <li><a href="tabla.html">Tablas</a></li>
+                    <li><a href="horario.html">Mi Horario</a></li>
+                    <li><a href="imagenes.html">Objetos Multimedia</a></li>
+                    <li><a   href="cv.html">Mi Currículum vitae</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 3</a>
+                <ul>
+                    <li><a href="formulario.html">Formularios</a></li>
+                    <li><a href="estilos.html">Estilos</a></li>
+                    <li><a href="Kitchen.html">kitchen-sink</a></li>
+                    <li><a   href="Kitchen2.html">kitchen-sink2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 4</a>
+                <ul>
+                    <li><a href="demo.html">Introducción a JavaScript</a></li>
+                    <li><a href="DOM.html">Dom</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 5</a>
+                <ul>
+                    <li><a href="eventos.html">Manejo de Eventos en JS</a></li>
+                    <li><a href="objetos.html">Objetos en JavaScript</a></li>
+                    <li><a href="pokeapi.html">PokeAPI</a></li>
+                    <li><a href="rick.html">API de 22690037</a></li>
+                </ul>
+            </li>
+        </ul>  
+    </header>
+<body>
+    <main class="container">
+        
+        <form id="search-form">
+            <label for="pokemon-name-input">Busca un Pokémon:</label>
+            <input type="text" id="pokemon-name-input" placeholder="Ejemplo: pikachu" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <article>
+            <dl>
+                <dt>Nombre</dt>
+                <dd id="pokemon-name"></dd>
+                <dt>Tipos</dt>
+                <dd id="pokemon-types"></dd>
+                <dd id="pokemon-additional-info"></dd>
+                <dt>Imagen</dt>
+                <dd>
+                    <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+                </dd>
+            </dl>
+            <h2>Sound :</h2>
+            <div class="audio-container">
+                <audio
+                    controls
+                    src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg"
+                    id="audio-pokemon"
+                ></audio>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

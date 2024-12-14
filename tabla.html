@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="icon" type="image/x-icon" href=".jpeg" />
+    <link rel="stylesheet" href="diseño2.css">
+</head>
+<header class="Top">
+    <div class="top-div">
+        <h2>
+            Practicas Segunda Oportunidad
+        </h2>
+    </div>
+</header>
+<header class="menu">
+    <nav id="nav"> 
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li>
+                <a href="#">AVANCE 1</a>
+                <ul>
+                    <li><a href="TextoGenerico.html">Texto</a></li>
+                    <li><a href="TextoTecnico.html">Texto Técnico</a></li>
+                    <li><a href="Listas.html">Listas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">AVANCE 2</a>
+                <ul>
+                    <li><a href="tabla.html">Tablas</a></li>
+                    <li><a href="horario.html">Mi Horario</a></li>
+                    <li><a href="imagenes.html">Objetos Multimedia</a></li>
+                    <li><a href="cv.html">Mi Currículum vitae</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 3</a>
+                <ul>
+                    <li><a href="formulario.html">Formularios</a></li>
+                    <li><a href="estilos.html">Estilos</a></li>
+                    <li><a href="Kitchen.html">kitchen-sink</a></li>
+                    <li><a href="Kitchen2.html">kitchen-sink2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 4</a>
+                <ul>
+                    <li><a href="demo.html">Introducción a JavaScript</a></li>
+                    <li><a href="DOM.html">Dom</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 5</a>
+                <ul>
+                    <li><a href="eventos.html">Manejo de Eventos en JS</a></li>
+                    <li><a href="objetos.html">Objetos en JavaScript</a></li>
+                    <li><a href="pokeapi.html">PokeAPI</a></li>
+                    <li><a href="rick.html">API de 22690037</a></li>
+                </ul>
+            </li>
+        </ul>  
+</header>
+<body>
+    <br>
+    <br>
+    <table border="5" align="center">
+        <tr>
+           <td bgcolor="pink">Carlos</td>
+           <td>Martinez</td>
+           <td>Mario</td>
+        </tr>
+        <tr>
+            <td>Julio</td>
+            <td bgcolor="red">Patricia</td>
+            <td>Andrea</td>
+        </tr>
+        <tr>
+            <td>Historia</td>
+            <td>Literatura</td>
+            <td bgcolor="blue">Matemáticas</td>
+            <td>Física</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td><pre>   </pre></td>
+            <td>😊</td>
+            <td><pre>  </pre></td>
+        </tr>
+        <tr>
+            <td><pre></pre></td>
+            <td>😄</td>
+            <td>🤓</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td><pre></pre></td>
+            <td>🥰</td>
+            <td></td>
+        </tr>
+    </table>
+    <h3 align="center">Encabezado </h3>
+    <hr />
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+    </table>
+    <h3 align="center">Cuerpo</h3>
+    <hr/>
+    <table border="1" align="center">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Martinez</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Andrés</td>
+                <td>24</td>
+            </tr>                    
+        </tbody>
+    </table>
+    <h3 align="center">Pie de tabla</h3>
+    <hr/>
+    <table border="1" align="center">
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>46</td>
+            </tr>
+        </tfoot>
+    </table>    
+    <h3 align="center">Terminado</h3>
+    <hr/>
+    <table border="1" align="center">                    
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Martinez</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Andrés</td>
+                <td>24</td>
+            </tr>         
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>46</td>
+            </tr>
+        </tfoot>
+    </table>   
+    <h3 align="center">Combinación de celdas en tablas</h3>  
+    <hr/>     
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th colspan="2">Información</th>
+            </tr>
+            <tr>
+                <th>Docente</th>
+                <th>Materias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Jaime</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Fundamentos de programación</td>
+            </tr>
+        </tbody>
+    </table>  
+
+    <h3 align="center">Ejercicio en Clase</h3>
+    <hr/>
+    <table border="1" align="center">
+        <thead>                  
+            <tr>
+                <th colspan="3" bgcolor="green">1</th>
+                <th rowspan="3" bgcolor="purple">4</th>
+            </tr>
+            <tr>
+                <th colspan="2" bgcolor="blue">2</th>
+                <th bgcolor="yellow">3</th>
+            </tr>
+            <tr>
+                <th bgcolor="pink">5</th>
+                <th bgcolor="red">6</th>
+                <th bgcolor="orange">7</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

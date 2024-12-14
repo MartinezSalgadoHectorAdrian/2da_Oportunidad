@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<header class="Top">
+    <div class="top-div">
+        <h2>
+            Practicas Segunda Oportunidad
+        </h2>
+    
+    </div>
+    </header>
+    <header class="menu">
+    <nav id="nav"> 
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li>
+                <a href="#">AVANCE 1</a>
+                <ul>
+                    <li><a href="TextoGenerico.html">Texto</a></li>
+                    <li><a href="TextoTecnico.html">Texto Técnico</a></li>
+                    <li><a href="Listas.html">Listas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">AVANCE 2</a>
+                <ul>
+                    <li><a href="tabla.html">Tablas</a></li>
+                    <li><a href="horario.html">Mi Horario</a></li>
+                    <li><a href="imagenes.html">Objetos Multimedia</a></li>
+                    <li><a   href="cv.html">Mi Currículum vitae</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 3</a>
+                <ul>
+                    <li><a href="formulario.html">Formularios</a></li>
+                    <li><a href="estilos.html">Estilos</a></li>
+                    <li><a href="Kitchen.html">kitchen-sink</a></li>
+                    <li><a   href="Kitchen2.html">kitchen-sink2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 4</a>
+                <ul>
+                    <li><a href="demo.html">Introducción a JavaScript</a></li>
+                    <li><a href="DOM.html">Dom</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AVANCE 5</a>
+                <ul>
+                    <li><a href="eventos.html">Manejo de Eventos en JS</a></li>
+                    <li><a href="objetos.html">Objetos en JavaScript</a></li>
+                    <li><a href="pokeapi.html">PokeAPI</a></li>
+                    <li><a href="rick.html">API de 22690037</a></li>
+                </ul>
+            </li>
+        </ul>  
+    </header>
+<body>
+    <h1>Formularios</h1> 
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"/>
+    <form method="post" action="procesa">
+    <input type="text" name="nombre" placeholder="Nombre" required/>
+</form>
+
+
+
+
+    <form method="get" action="procesa">
+    <input type="text" name="nombre" placeholder="Nombre" required/>
+    <div></div>
+    <input type="text" name="nombre" />
+    <div></div>
+    <input type="password" name="clave" />
+    <div></div>
+    <input type="file" name="archivo" />
+    <div></div>
+    <input type="checkbox" name="acepto" />
+    <input type="radio" name="sexo" value="M" />
+    <input type="hidden" name="folio"  />
+    <div></div>
+    <input type="email" name="email"/>
+    <div></div>
+    <input type="url" name="urll"/>
+    <div></div>
+    <input type="number" name="numero"/>
+    <div></div>
+    <input type="range" name="Rango"/>
+    <div></div>
+    <input type="date" name="Fecha"/>
+    <div></div>
+    <input type="mouth" name="Mes"/>
+    <div></div>
+    <input type="week" name="semana"/>
+    <div></div>
+    <input type="time" name="tiempo"/>
+    <div></div>
+    <input type="datetime-local" name="fecha_y_hora"/>
+    <div></div>
+    <input type="color" name="color"/>
+    <div></div>
+    <input type="seach" name="buscar"/>
+    <div></div>
+    <input type="tel" name="tel"/>
+    <div></div>
+    <textarea name="comentario" rows="4" cols="50" >
+        Escribe aqui tu comentario 
+    </textarea>
+    <div></div>
+    <button type="submit">Enviar</button>
+    <div></div>
+    <button type="reset">Limpiar</button>
+    <div></div>
+    <button type="button">Cancelar</button>
+    <div></div>
+    
+
+    <div>
+        <label for="masculino">
+            <input type="radio" id="masculino" name="genero" value="M" checked /> Masculino
+        </label>
+    </div>
+    <div>
+        <label for="femenino">
+            <input type="radio" id="femenino" name="genero" value="F" /> Femenino 
+        </label>
+    </div>
+
+<select name="pais" >
+    <option value="MX" selected>México</option>
+    <option value="US">Estados Unidos</option>
+    <option value="CA">Canada</option>
+</select>
+<div></div>
+<select name="colores" multiple size="2">
+    <option value="rojo">Rojo</option>
+    <option value="verde">Verde</option>
+    <option value="azul">Azul</option>
+</select>
+
+<select name="colores" multiple size="2">
+    <optgroup label="Colores primarios">
+    <option value="rojo">Rojo</option>
+    <option value="verde">Verde</option>
+    <option value="azul">Azul</option>
+    </optgroup>
+    <optgroup label="Colores secundarios">
+    <option value="amarillo">Amarillo</option>
+    <option value="naranja">Naranja</option>
+    <option value="violeta">Violeta</option>
+</optgroup>
+</select>
+
+<fieldset disabled>
+    <legend>Datos personales</legend>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"/>
+    <label for="apellido">apellido</label>
+    <input type="text" id="apellido" name="apellido"/>
+</fieldset>
+
+<div></div>
+<input list="colores" name="color" />
+<datalist id="colores">
+<option value="Rojo" />
+<option value="Verde" />
+<option value="Azul" />
+</datalist>
+<output name="resultado"
+for="numero">0</output>
+<progress value="75" max="100">75%</progress>
+<meter value="0.5" min="0" max="1">50%
+</meter>
+<details>
+<summary>Detalles</summary>
+<p>Contenido de los detalles...</p>
+</details>
+
+
+
+
+</form>
+</body>
+</head>
